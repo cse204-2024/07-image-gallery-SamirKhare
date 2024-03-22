@@ -1,4 +1,4 @@
-let img = [
+let images = [
     "Images/benjamin-lehman-xnTcEJm5IZw-unsplash.jpg",
     "Images/clement-proust-x8pdFo5tgVE-unsplash.jpg",
     "Images/denis-tuksar-pugdAUdJOyQ-unsplash.jpg",
@@ -12,19 +12,22 @@ let img = [
     "Images/wenya-luo-4cPpG35HORU-unsplash.jpg",
     "Images/yves-cedric-schulze-84vI7X58HMs-unsplash.jpg"
 ]
-document.getElementsByClassName("picture").addEventListener("click", enlarge);
-function enlarge() {
-    document.getElementsByClassName("MyElement").className = "MyClass"
+for (let i=0; i < images.length; i++){
+document.getElementsByClassName("picture")[i].addEventListener("click", enlarge);
 }
-document.getElementsByClassName("close").addEventListener("click", closeButton);
+function enlarge() {
+    console.log("Click works");
+    document.getElementsByClassName(enlargehidden) = enlargephoto;
+}
+document.getElementById("close").addEventListener("click", closeButton);
 function closeButton() {
 
 }
-document.getElementsByClassName("next").addEventListener("click", nextButton);
+document.getElementById("next").addEventListener("click", nextButton);
 function nextButton() {
 
 }
-document.getElementsByClassName("previous").addEventListener("click", previousButton);
+document.getElementById("previous").addEventListener("click", previousButton);
 function previousButton() {
 
 }
