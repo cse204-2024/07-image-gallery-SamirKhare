@@ -25,5 +25,39 @@ function enlarge(event) {
     document.getElementById("gallerywrapper").setAttribute("id", "gallerywrapperhidden");
     document.getElementById("enlargedimage").setAttribute("src", document.getElementById(photo).getAttribute("src"));
 }
+document.getElementById("close").addEventListener("click", closeButton);
+function closeButton() {
+    document.getElementById("enlargephoto").setAttribute("class", "enlargehidden");
+    document.getElementById("enlargephoto").setAttribute("id", "enlargehidden");
+    document.getElementById("gallerywrapperhidden").setAttribute("class", "gallerywrapper");
+    document.getElementById("gallerywrapperhidden").setAttribute("id", "gallerywrapper");
+}
+document.getElementById("next").addEventListener("click", nextButton);
+    function nextButton() {
+        let currentItem = document.getElementById("enlargedimage").getAttribute("src");
+        console.log(currentItem);
+        let nextIndex = images.indexOf(currentItem);
+        console.log(nextIndex);
+        if (nextIndex < images.length-1){
+            console.log(nextIndex);
+            document.getElementById("enlargedimage").setAttribute("src", images[nextIndex+1]);
+        }
+        else{
+            document.getElementById("enlargedimage").setAttribute("src", images[0])
+        }
+}
+document.getElementById("previous").addEventListener("click", previousButton);
+function previousButton() {
+    let currentItem = document.getElementById("enlargedimage").getAttribute("src");
+        console.log(currentItem);
+        let nextIndex = images.indexOf(currentItem);
+        console.log(nextIndex);
+        if (nextIndex > 0){
+            document.getElementById("enlargedimage").setAttribute("src", images[nextIndex-1]);
+    }
+    else{
+        document.getElementById("enlargedimage").setAttribute("src", images[images.length-1])
+    }
+}
 
 
