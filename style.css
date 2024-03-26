@@ -1,9 +1,11 @@
+/*Color pallete: #B350F0, #4700F0, #F00076, #0007F0*/
 body{
     margin:0px;
     background-color:#fafafa;
     font-family: Arial, Helvetica, sans-serif;
     font-style:normal;
     line-height:1;
+    color:#B350F0;
   }
   h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,8 +16,8 @@ header{
     border-style:solid;
     border-color:#5555;
     padding:0px;
-    background-color:#B350F0;
-    color:#3b3b3be7;
+    background-color:#4700F0;
+    color:#fafafa;
     width:100%;
     text-align:center;
     display:inline-block;
