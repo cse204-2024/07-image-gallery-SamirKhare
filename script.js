@@ -24,6 +24,7 @@ function enlarge(event) {
     document.getElementById("gallerywrapper").setAttribute("class", "gallerywrapperhidden");
     document.getElementById("gallerywrapper").setAttribute("id", "gallerywrapperhidden");
     document.getElementById("enlargedimage").setAttribute("src", document.getElementById(photo).getAttribute("src"));
+    document.getElementById("footer").setAttribute("id", "footerlargephoto")
 }
 document.getElementById("close").addEventListener("click", closeButton);
 function closeButton() {
@@ -31,6 +32,7 @@ function closeButton() {
     document.getElementById("enlargephoto").setAttribute("id", "enlargehidden");
     document.getElementById("gallerywrapperhidden").setAttribute("class", "gallerywrapper");
     document.getElementById("gallerywrapperhidden").setAttribute("id", "gallerywrapper");
+    document.getElementById("footerlargephoto").setAttribute("id", "footer")
 }
 document.getElementById("next").addEventListener("click", nextButton);
     function nextButton() {
