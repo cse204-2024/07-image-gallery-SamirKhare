@@ -1,5 +1,3 @@
 # Starter HTML, CSS and Javascript
 
-This repository provides blank files for HTML, CSS, and Javascript.
-
-Before submitting, replace the text in this README file with your name and a brief description of your work (just a sentence or two will do).
+I made an image gallery that contains 12 photos of architecture. An image can be enlarged by clicking on it and then you can navigate to the other images using the next and previous buttons, with a closing button to return to the original gallery.
